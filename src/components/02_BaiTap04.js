@@ -91,9 +91,10 @@ const searchMovies = (movies,searchTerm) => {
         movie.title.toLowerCase().includes(searchTerm.toLowerCase())
       )
     : movies;
-  console.log(filteredMovies);
+  // console.log(filteredMovies);
   
   return filteredMovies;
 }
+
 
 export default MovieCards;
