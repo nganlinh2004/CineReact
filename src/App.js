@@ -1,15 +1,15 @@
-import { HoverEffect } from "./components/ui/card-hover-effect";
-import { CardBody, CardContainer, CardItem } from "./components/ui/3d-card";
-import App from "./components/ui/02_MachLamQuocHoai";
-import MovieForm from "./components/02_BaiTap04";
+// import { HoverEffect } from "./components/ui/card-hover-effect";
+// import { CardBody, CardContainer, CardItem } from "./components/ui/3d-card";
+// import App from "./components/ui/02_MachLamQuocHoai";
+// import MovieForm from "./components/02_BaiTap04";
+// import MovieApp from "./components/02_BaiTap04";
 import movies from "./movies";
-import MovieApp from "./components/02_BaiTap04";
 import MovieCards from "./components/02_BaiTap04";
 
 export function CardHoverEffectDemo() {
   return (
     (<div className="">
-      <HoverEffect items={projects} />
+      {/* <HoverEffect items={projects} /> */}
       {/* <App /> */}
       <MovieCards movies={movies} />
     </div>)
