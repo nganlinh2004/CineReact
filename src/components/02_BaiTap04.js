@@ -1,5 +1,5 @@
 import React from "react";
-
+import movies from "../movies";
 const styles = {
   card: {
     borderRadius: "16px",
@@ -61,9 +61,11 @@ const styles = {
     cursor: "pointer",
   }
 };
+let Movies = movies
 
-const MovieCards = ({ movies }) => {
-  const [renderMovies, setRenderMovies] = React.useState(movies);
+const MovieCards = () => {
+  
+  const [renderMovies, setRenderMovies] = React.useState(Movies);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -78,7 +80,9 @@ const MovieCards = ({ movies }) => {
       image: e.target.image.value,
     });
 
-    setRenderMovies(addMovie(renderMovies, newMovie));
+    Movies = addMovie(Movies, newMovie);
+    console.log(Movies);
+    setRenderMovies(Movies);
   };
 
   const FormAddMovie = () => {
@@ -107,7 +111,7 @@ const MovieCards = ({ movies }) => {
       <h1 style={{ textAlign: "center", color: "white" }}>Popular Movies</h1>
       <div style={{display:"flex", justifyContent:"center"}}>
         <input type="text" placeholder="Search movies" style={{ width: "40%", padding: "8px", borderRadius: "12px", border: "1px solid #1f2937", marginBottom: "16px" }} 
-        onChange={(e)=>{setRenderMovies(searchMovies(movies,e.target.value))}} />
+        onChange={(e)=>{setRenderMovies(searchMovies(Movies,e.target.value))}} />
       </div>
 
       <FormAddMovie></FormAddMovie>
@@ -148,6 +152,8 @@ const MovieCards = ({ movies }) => {
 };
 
 const searchMovies = (movies,searchTerm) => {
+  console.log("movies:",movies);
+  
   const filteredMovies = searchTerm
     ? movies.filter((movie) =>
         movie.title.toLowerCase().includes(searchTerm.toLowerCase())
