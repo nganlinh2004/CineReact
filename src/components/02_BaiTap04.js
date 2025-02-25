@@ -1,5 +1,6 @@
 import React from "react";
 import movies from "../movies";
+import { Link } from "react-router-dom";
 const styles = {
   card: {
     borderRadius: "16px",
@@ -132,16 +133,18 @@ const MovieCards = () => {
                 <p><strong>Box Office:</strong> {movie.boxOffice}</p>
               </div>
               <div style={{display:"flex", justifyContent:"end", alignItems:"end"}}>
-                <div className="h-10 w-full mt-4 overflow-hidden relative rounded-xl px-6 py-2  bg-black dark:bg-white dark:text-black text-white flex justify-center items-end group/modal-btn">
-                  <span
-                    className="group-hover/modal-btn:translate-x-52 text-center transition duration-500">
-                    Play now
-                  </span>
-                  <div
-                    className=" -translate-x-52 group-hover/modal-btn:translate-x-0 flex items-center justify-center absolute inset-0 transition duration-500 text-white z-20">
-                    🍿
+                <Link className="w-full" to={`/movies/${movie.id}`}>
+                  <div className="h-10 w-full mt-4 overflow-hidden relative rounded-xl px-6 py-2  bg-black dark:bg-white dark:text-black text-white flex justify-center items-end group/modal-btn">
+                    <span
+                      className="group-hover/modal-btn:translate-x-52 text-center transition duration-500">
+                      Play now
+                    </span>
+                    <div
+                      className=" -translate-x-52 group-hover/modal-btn:translate-x-0 flex items-center justify-center absolute inset-0 transition duration-500 text-white z-20">
+                      🍿
+                    </div>
                   </div>
-                </div>
+                </Link>
               </div>
             </div>
           );
@@ -163,10 +166,6 @@ const searchMovies = (movies,searchTerm) => {
   
   return filteredMovies;
 }
-
-
-
-
 
 const addMovie = (movies, newMovie) => {
   const updatedMovies = [...movies, newMovie];

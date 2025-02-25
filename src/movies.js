@@ -1,5 +1,6 @@
 const movies = [
   {
+    id: "MV0001",
     title: "Dune: Part One",
     genre: ["Sci-Fi", "Adventure"],
     director: "Denis Villeneuve",
@@ -10,6 +11,7 @@ const movies = [
     image: "dune.jpg",
   },
   {
+    id: "MV0002",
     title: "Oppenheimer",
     genre: ["Biography", "Drama"],
     director: "Christopher Nolan",
@@ -21,6 +23,7 @@ const movies = [
       "oppenheimer.jpg",
   },
   {
+    id: "MV0003",
     title: "Spider-Man: No Way Home",
     genre: ["Action", "Adventure"],
     director: "Jon Watts",
@@ -32,6 +35,7 @@ const movies = [
       "no_way_home.jpg",
   },
   {
+    id: "MV0004",
     title: "Top Gun: Maverick",
     genre: ["Action", "Drama"],
     director: "Joseph Kosinski",
@@ -43,6 +47,7 @@ const movies = [
       "top_gun.jpg",
   },
   {
+    id: "MV0005",
     title: "Avengers: Endgame",
     genre: ["Action", "Sci-Fi"],
     director: "Anthony Russo, Joe Russo",
@@ -54,6 +59,7 @@ const movies = [
       "avengers_endgame.jpg",
   },
   {
+    id: "MV0006",
     title: "Avengers: Infinity War",
     genre: ["Action", "Sci-Fi"],
     director: "Anthony Russo, Joe Russo",
@@ -65,6 +71,7 @@ const movies = [
       "avengers_infinity_war.jpg",
   },
   {
+    id: "MV0007",
     title: "John Wick: Chapter 4",
     genre: ["Action", "Thriller"],
     director: "Chad Stahelski",
@@ -75,6 +82,7 @@ const movies = [
     image: "john_wick_4.jpg",
   },
   {
+    id: "MV0008",
     title: "The Batman",
     genre: ["Action", "Crime"],
     director: "Matt Reeves",
@@ -86,6 +94,7 @@ const movies = [
       "batman.jpg",
   },
   {
+    id: "MV0009",
     title: "Doctor Strange in the Multiverse of Madness",
     genre: ["Action", "Adventure"],
     director: "Sam Raimi",
@@ -97,6 +106,7 @@ const movies = [
       "doctor_strange.jpg",
   },
   {
+    id: "MV0010",
     title: "Everything Everywhere All at Once",
     genre: ["Sci-Fi", "Comedy"],
     director: "Daniel Kwan, Daniel Scheinert",
@@ -108,6 +118,7 @@ const movies = [
       "everything_everywhere.jpg",
   },
   {
+    id: "MV0011",
     title: "Dune: Part Two",
     genre: ["Sci-Fi", "Adventure"],
     director: "Denis Villeneuve",
@@ -119,6 +130,7 @@ const movies = [
       "dune_2.jpg",
   },
   {
+    id: "MV0012",
     title: "Black Panther",
     genre: ["Action", "Adventure"],
     director: "Ryan Coogler",
@@ -130,6 +142,7 @@ const movies = [
       "black_panther.jpg",
   },
   {
+    id: "MV0013",
     title: "Joker",
     genre: ["Crime", "Drama"],
     director: "Todd Phillips",
@@ -141,6 +154,7 @@ const movies = [
       "joker.jpg",
   },
   {
+    id: "MV0014",
     title: "Mission: Impossible – Fallout",
     genre: ["Action", "Adventure"],
     director: "Christopher McQuarrie",
@@ -152,6 +166,7 @@ const movies = [
       "mission_impossible.jpg",
   },
   {
+    id: "MV0015",
     title: "The Suicide Squad",
     genre: ["Action", "Comedy"],
     director: "James Gunn",
@@ -163,6 +178,7 @@ const movies = [
       "the_suicide_squad.jpg",
   },
   {
+    id: "MV0016",
     title: "The Lion King",
     genre: ["Animation", "Adventure"],
     director: ["Jon Favreau"],
@@ -173,6 +189,7 @@ const movies = [
     image: "thelionking.jpg"
   },
   {
+    id: "MV0017",
     title: "Titanic",
     genre: ["Romance", "History"],
     director: ["James Cameron"],
@@ -183,6 +200,7 @@ const movies = [
     image: "titanic.jpg"
   },
   {
+    id: "MV0018",
     title: "The Dark Knight",
     genre: ["Action", "Crime", "Drama"],
     director: ["Christopher Nolan"],
@@ -193,6 +211,7 @@ const movies = [
     image: "thedarkknight.jpg"
   },
   {
+    id: "MV0019",
     title: "Inception",
     genre: ["Science Fiction", "Action"],
     director: ["Christopher Nolan"],
@@ -203,6 +222,7 @@ const movies = [
     image: "inception.jpg"
   },
   {
+    id: "MV0020",
     title: "Avatar",
     genre: ["Science Fiction", "Adventure"],
     director: ["James Cameron"],
@@ -213,6 +233,7 @@ const movies = [
     image: "avatar.jpg"
   },
   {
+    id: "MV0021",
     title: "Star Wars: The Force Awakens",
     genre: ["Science Fiction", "Action"],
     director: ["J.J. Abrams"],
@@ -223,6 +244,7 @@ const movies = [
     image: "starwarstheforceawakens.jpg"
   },
   {
+    id: "MV0022",
     title: "Jurassic World",
     genre: ["Adventure", "Action", "Science Fiction"],
     director: ["Colin Trevorrow"],
@@ -233,6 +255,7 @@ const movies = [
     image: "jurassicworld.jpg"
   },
   {
+    id: "MV0023",
     title: "Frozen II",
     genre: ["Animation", "Adventure", "Musical"],
     director: ["Chris Buck", "Jennifer Lee"],
@@ -243,6 +266,7 @@ const movies = [
     image: "frozen2.jpg"
   },
   {
+    id: "MV0024",
     title: "Interstellar",
     genre: ["Sci-Fi", "Adventure"],
     director: "Christopher Nolan",
@@ -253,6 +277,7 @@ const movies = [
     image: "interstellar.jpg",
   },
   {
+    id: "MV0025",
     title: "The Matrix",
     genre: ["Sci-Fi", "Action"],
     director: "Lana Wachowski, Lilly Wachowski",
@@ -263,6 +288,7 @@ const movies = [
     image: "matrix.jpg",
   },
   {
+    id: "MV0026",
     title: "Mad Max: Fury Road",
     genre: ["Action", "Adventure"],
     director: "George Miller",
@@ -273,6 +299,7 @@ const movies = [
     image: "mad_max.jpg",
   },
   {
+    id: "MV0027",
     title: "The Revenant",
     genre: ["Drama", "Adventure"],
     director: "Alejandro G. Iñárritu",
@@ -283,6 +310,7 @@ const movies = [
     image: "revenant.jpg",
   },
   {
+    id: "MV0028",
     title: "Parasite",
     genre: ["Thriller", "Drama"],
     director: "Bong Joon-ho",
@@ -293,6 +321,7 @@ const movies = [
     image: "parasite.jpg",
   },
   {
+    id: "MV0029",
     title: "Whiplash",
     genre: ["Drama", "Music"],
     director: "Damien Chazelle",
@@ -303,6 +332,7 @@ const movies = [
     image: "whiplash.jpg",
   },
   {
+    id: "MV0030",
     title: "La La Land",
     genre: ["Musical", "Romance"],
     director: "Damien Chazelle",
@@ -313,6 +343,7 @@ const movies = [
     image: "la_la_land.jpg",
   },
   {
+    id: "MV0031",
     title: "Gladiator",
     genre: ["Action", "Drama"],
     director: "Ridley Scott",
@@ -323,6 +354,7 @@ const movies = [
     image: "gladiator.jpg",
   },
   {
+    id: "MV0032",
     title: "The Wolf of Wall Street",
     genre: ["Biography", "Comedy"],
     director: "Martin Scorsese",
@@ -333,6 +365,7 @@ const movies = [
     image: "wolf_wallstreet.jpg",
   },
   {
+    id: "MV0033",
     title: "Shutter Island",
     genre: ["Thriller", "Mystery"],
     director: "Martin Scorsese",
@@ -343,6 +376,7 @@ const movies = [
     image: "shutter_island.jpg",
   },
   {
+    id: "MV0034",
     title: "The Grand Budapest Hotel",
     genre: ["Comedy", "Drama"],
     director: "Wes Anderson",
@@ -353,6 +387,7 @@ const movies = [
     image: "grand_budapest.jpg",
   },
   {
+    id: "MV0035",
     title: "Ford v Ferrari",
     genre: ["Biography", "Drama"],
     director: "James Mangold",
@@ -363,6 +398,7 @@ const movies = [
     image: "ford_ferrari.jpg",
   },
   {
+    id: "MV0036",
     title: "A Quiet Place",
     genre: ["Horror", "Thriller"],
     director: "John Krasinski",
@@ -373,6 +409,7 @@ const movies = [
     image: "a_quiet_place.jpg",
   },
   {
+    id: "MV0037",
     title: "Tenet",
     genre: ["Sci-Fi", "Action"],
     director: "Christopher Nolan",
@@ -383,6 +420,7 @@ const movies = [
     image: "tenet.jpg",
   },
   {
+    id: "MV0038",
     title: "The Irishman",
     genre: ["Crime", "Drama"],
     director: "Martin Scorsese",
@@ -393,6 +431,7 @@ const movies = [
     image: "irishman.jpg",
   },
   {
+    id: "MV0039",
     title: "1917",
     genre: ["War", "Drama"],
     director: "Sam Mendes",
@@ -403,6 +442,7 @@ const movies = [
     image: "1917.jpg",
   },
   {
+    id: "MV0040",
     title: "Knives Out",
     genre: ["Mystery", "Comedy"],
     director: "Rian Johnson",
@@ -413,6 +453,7 @@ const movies = [
     image: "knives_out.jpg",
   },
   {
+    id: "MV0041",
     title: "The Social Network",
     genre: ["Biography", "Drama"],
     director: "David Fincher",
@@ -423,6 +464,7 @@ const movies = [
     image: "social_network.jpg",
   },
   {
+    id: "MV0042",
     title: "The Green Mile",
     genre: ["Drama", "Fantasy"],
     director: "Frank Darabont",
@@ -433,6 +475,7 @@ const movies = [
     image: "green_mile.jpg",
   },
   {
+    id: "MV0043",
     title: "The Truman Show",
     genre: ["Drama", "Sci-Fi"],
     director: "Peter Weir",
