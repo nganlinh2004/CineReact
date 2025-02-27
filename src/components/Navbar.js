@@ -17,20 +17,28 @@ const NavBar = () => {
             Home
           </NavLink>
           <NavLink
-            to="/about"
+            to="/create"
             className={({ isActive }) =>
               `px-4 py-2 rounded-lg transition-all duration-300 ${isActive ? "bg-white text-blue-600 shadow-md" : "hover:bg-blue-700"}`
             }
           >
-            About
+            Create
           </NavLink>
           <NavLink
-            to="/contact"
+            to="/update"
             className={({ isActive }) =>
               `px-4 py-2 rounded-lg transition-all duration-300 ${isActive ? "bg-white text-blue-600 shadow-md" : "hover:bg-blue-700"}`
             }
           >
-            Contact
+            Update
+          </NavLink>
+          <NavLink
+            to="/delete"
+            className={({ isActive }) =>
+              `px-4 py-2 rounded-lg transition-all duration-300 ${isActive ? "bg-white text-blue-600 shadow-md" : "hover:bg-blue-700"}`
+            }
+          >
+            Delete
           </NavLink>
         </div>
       </div>

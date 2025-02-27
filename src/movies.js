@@ -19,8 +19,7 @@ const movies = [
     duration: 180,
     cast: ["Cillian Murphy", "Emily Blunt", "Robert Downey Jr."],
     boxOffice: "$964 million",
-    image:
-      "oppenheimer.jpg",
+    image: "oppenheimer.jpg",
   },
   {
     id: "MV0003",
@@ -31,8 +30,7 @@ const movies = [
     duration: 148,
     cast: ["Tom Holland", "Zendaya", "Benedict Cumberbatch"],
     boxOffice: "$1.921 billion",
-    image:
-      "no_way_home.jpg",
+    image: "no_way_home.jpg",
   },
   {
     id: "MV0004",
@@ -43,8 +41,7 @@ const movies = [
     duration: 130,
     cast: ["Tom Cruise", "Miles Teller", "Jennifer Connelly"],
     boxOffice: "$1.495 billion",
-    image:
-      "top_gun.jpg",
+    image: "top_gun.jpg",
   },
   {
     id: "MV0005",
@@ -55,8 +52,7 @@ const movies = [
     duration: 181,
     cast: ["Robert Downey Jr.", "Chris Evans", "Scarlett Johansson"],
     boxOffice: "$2.798 billion",
-    image:
-      "avengers_endgame.jpg",
+    image: "avengers_endgame.jpg",
   },
   {
     id: "MV0006",
@@ -67,8 +63,7 @@ const movies = [
     duration: 149,
     cast: ["Robert Downey Jr.", "Chris Hemsworth", "Mark Ruffalo"],
     boxOffice: "$2.048 billion",
-    image:
-      "avengers_infinity_war.jpg",
+    image: "avengers_infinity_war.jpg",
   },
   {
     id: "MV0007",
@@ -90,8 +85,7 @@ const movies = [
     duration: 176,
     cast: ["Robert Pattinson", "Zoë Kravitz", "Paul Dano"],
     boxOffice: "$772.2 million",
-    image:
-      "batman.jpg",
+    image: "batman.jpg",
   },
   {
     id: "MV0009",
@@ -102,8 +96,7 @@ const movies = [
     duration: 126,
     cast: ["Benedict Cumberbatch", "Elizabeth Olsen", "Chiwetel Ejiofor"],
     boxOffice: "$955.8 million",
-    image:
-      "doctor_strange.jpg",
+    image: "doctor_strange.jpg",
   },
   {
     id: "MV0010",
@@ -114,8 +107,7 @@ const movies = [
     duration: 140,
     cast: ["Michelle Yeoh", "Stephanie Hsu", "Ke Huy Quan"],
     boxOffice: "$141.2 million",
-    image:
-      "everything_everywhere.jpg",
+    image: "everything_everywhere.jpg",
   },
   {
     id: "MV0011",
@@ -126,8 +118,7 @@ const movies = [
     duration: 166,
     cast: ["Timothée Chalamet", "Zendaya", "Rebecca Ferguson"],
     boxOffice: "TBA",
-    image:
-      "dune_2.jpg",
+    image: "dune_2.jpg",
   },
   {
     id: "MV0012",
@@ -138,8 +129,7 @@ const movies = [
     duration: 134,
     cast: ["Chadwick Boseman", "Michael B. Jordan", "Lupita Nyong'o"],
     boxOffice: "$1.344 billion",
-    image:
-      "black_panther.jpg",
+    image: "black_panther.jpg",
   },
   {
     id: "MV0013",
@@ -150,8 +140,7 @@ const movies = [
     duration: 122,
     cast: ["Joaquin Phoenix", "Robert De Niro", "Zazie Beetz"],
     boxOffice: "$1.074 billion",
-    image:
-      "joker.jpg",
+    image: "joker.jpg",
   },
   {
     id: "MV0014",
@@ -162,8 +151,7 @@ const movies = [
     duration: 147,
     cast: ["Tom Cruise", "Henry Cavill", "Rebecca Ferguson"],
     boxOffice: "$791.7 million",
-    image:
-      "mission_impossible.jpg",
+    image: "mission_impossible.jpg",
   },
   {
     id: "MV0015",
@@ -174,8 +162,7 @@ const movies = [
     duration: 132,
     cast: ["Margot Robbie", "Idris Elba", "John Cena"],
     boxOffice: "$167.4 million",
-    image:
-      "the_suicide_squad.jpg",
+    image: "the_suicide_squad.jpg",
   },
   {
     id: "MV0016",
@@ -186,7 +173,7 @@ const movies = [
     duration: 118,
     cast: ["Donald Glover", "Beyoncé", "Seth Rogen"],
     boxOffice: "$1.663 billion",
-    image: "thelionking.jpg"
+    image: "thelionking.jpg",
   },
   {
     id: "MV0017",
@@ -197,7 +184,7 @@ const movies = [
     duration: 195,
     cast: ["Leonardo DiCaprio", "Kate Winslet"],
     boxOffice: "$2.195 billion",
-    image: "titanic.jpg"
+    image: "titanic.jpg",
   },
   {
     id: "MV0018",
@@ -208,7 +195,7 @@ const movies = [
     duration: 152,
     cast: ["Christian Bale", "Heath Ledger", "Aaron Eckhart"],
     boxOffice: "$1.005 billion",
-    image: "thedarkknight.jpg"
+    image: "thedarkknight.jpg",
   },
   {
     id: "MV0019",
@@ -219,7 +206,7 @@ const movies = [
     duration: 148,
     cast: ["Leonardo DiCaprio", "Joseph Gordon-Levitt", "Ellen Page"],
     boxOffice: "$836 million",
-    image: "inception.jpg"
+    image: "inception.jpg",
   },
   {
     id: "MV0020",
@@ -230,7 +217,7 @@ const movies = [
     duration: 162,
     cast: ["Sam Worthington", "Zoe Saldana"],
     boxOffice: "$2.847 billion",
-    image: "avatar.jpg"
+    image: "avatar.jpg",
   },
   {
     id: "MV0021",
@@ -241,7 +228,7 @@ const movies = [
     duration: 138,
     cast: ["Daisy Ridley", "John Boyega", "Harrison Ford"],
     boxOffice: "$2.068 billion",
-    image: "starwarstheforceawakens.jpg"
+    image: "starwarstheforceawakens.jpg",
   },
   {
     id: "MV0022",
@@ -252,7 +239,7 @@ const movies = [
     duration: 124,
     cast: ["Chris Pratt", "Bryce Dallas Howard"],
     boxOffice: "$1.671 billion",
-    image: "jurassicworld.jpg"
+    image: "jurassicworld.jpg",
   },
   {
     id: "MV0023",
@@ -263,7 +250,7 @@ const movies = [
     duration: 103,
     cast: ["Idina Menzel", "Kristen Bell", "Josh Gad"],
     boxOffice: "$1.450 billion",
-    image: "frozen2.jpg"
+    image: "frozen2.jpg",
   },
   {
     id: "MV0024",
@@ -486,5 +473,4 @@ const movies = [
     image: "truman_show.jpg",
   },
 ];
-
 export default movies;

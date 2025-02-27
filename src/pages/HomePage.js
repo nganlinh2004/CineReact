@@ -1,4 +1,4 @@
-import MovieCards from "../components/02_BaiTap04";
+import MovieCards from "../components/Item";
 
 const Home = () => {
     return (

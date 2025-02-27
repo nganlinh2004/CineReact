@@ -2,8 +2,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavBar from "./components/Navbar";
 import Home from "./pages/HomePage";
 import MovieDetail from "./pages/MovieDetail";
-// import About from "./pages/About";
-// import Contact from "./pages/Contact";
+import CreateMovie from "./pages/CreatePage";
+import UpdateMovie from "./pages/EditPage";
+import DeleteMovie from "./pages/DeletePage";
 
 function App() {
   return (
@@ -13,8 +14,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/movies/:id" element={<MovieDetail></MovieDetail>} />
-          {/* <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} /> */}
+          <Route path="/create"/>
+          <Route path="/update"/>
+          <Route path="/delete"/>
         </Routes>
       </div>
     </Router>
