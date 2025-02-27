@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import movies from "../movies";
 import { Link } from "react-router-dom";
-import { IconPlus, IconTrash } from "@tabler/icons-react";
+import { IconEdit, IconTrash } from "@tabler/icons-react";
 import CreateMovie from "../pages/CreatePage"; // Import CreateMovie
 
 const styles = {
@@ -36,7 +36,7 @@ const styles = {
 const MovieCards = () => {
   const [renderMovies, setRenderMovies] = useState(movies);
   const [showForm, setShowForm] = useState(false); // Trạng thái hiển thị form
-  const [searchTerm, setSearchTerm] = useState("");
+  const [searchTerm] = useState("");
   const [selectedGenre, setSelectedGenre] = useState("All");
 
   const searchMovies = (movies, searchTerm) => {
@@ -75,6 +75,24 @@ const MovieCards = () => {
   const handleAddMovie = (newMovie) => {
     setRenderMovies([...renderMovies, newMovie]); // Cập nhật danh sách phim
     setShowForm(false); // Đóng form sau khi thêm
+  };
+
+  const handleUpdateMovie = (id) => {
+    const movieToUpdate = renderMovies.find((movie) => movie.id === id);
+    if (!movieToUpdate) return;
+  
+    const updatedTitle = prompt("Enter new title:", movieToUpdate.title);
+    const updatedGenre = prompt("Enter new genre:", movieToUpdate.genre.join(", "));
+  
+    if (updatedTitle && updatedGenre) {
+      const updatedMovies = renderMovies.map((movie) =>
+        movie.id === id
+          ? { ...movie, title: updatedTitle, genre: updatedGenre.split(", ").map(g => g.trim()) }
+          : movie
+      );
+  
+      setRenderMovies(updatedMovies);
+    }
   };
 
   const handleDeleteMovie = (id) => {
@@ -162,25 +180,7 @@ const MovieCards = () => {
                 <Link className="w-full" to={`/movies/${movie.id}`}>
                   <div className="h-10 w-full mt-4 overflow-hidden relative rounded-xl px-6 py-2 bg-black dark:bg-white dark:text-black text-white flex justify-center items-end group/modal-btn">
                     <span className="group-hover/modal-btn:translate-x-52 text-center transition duration-500">
-                      Watchlist
-                    </span>
-                    <div className="-translate-x-52 group-hover/modal-btn:translate-x-0 flex items-center justify-center absolute inset-0 transition duration-500 z-20">
-                      <IconPlus stroke={3} className="text-sky-700" />
-                    </div>
-                  </div>
-                </Link>
-              </div>
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "end",
-                  alignItems: "end",
-                }}
-              >
-                <Link className="w-full" to={`/movies/${movie.id}`}>
-                  <div className="h-10 w-full mt-4 overflow-hidden relative rounded-xl px-6 py-2 bg-black dark:bg-white dark:text-black text-white flex justify-center items-end group/modal-btn">
-                    <span className="group-hover/modal-btn:translate-x-52 text-center transition duration-500">
-                      Play now
+                      View Details
                     </span>
                     <div className="-translate-x-52 group-hover/modal-btn:translate-x-0 flex items-center justify-center absolute inset-0 transition duration-500 text-white z-20">
                       🍿
@@ -188,10 +188,17 @@ const MovieCards = () => {
                   </div>
                 </Link>
               </div>
+{/* Nút Update */}
+<button
+  onClick={() => handleUpdateMovie(movie.id)}
+  className="w-full bg-yellow-500 text-white py-2 mt-4 rounded-xl hover:bg-yellow-600 flex items-center justify-center"
+>
+  <IconEdit className="mr-2" /> Update
+</button>
               {/* Nút Delete */}
               <button
                 onClick={() => handleDeleteMovie(movie.id)}
-                className="w-full bg-red-500 text-white py-2 mt-4 rounded hover:bg-red-600 flex items-center justify-center"
+                className="w-full bg-red-500 text-white py-2 mt-4 rounded-xl hover:bg-red-600 flex items-center justify-center"
               >
                 <IconTrash className="mr-2" /> Delete
               </button>

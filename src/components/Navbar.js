@@ -5,7 +5,7 @@ const NavBar = () => {
     <nav className="bg-gradient-to-r from-blue-500 to-indigo-600 text-white p-4 shadow-md">
       <div className="container mx-auto flex justify-between items-center">
         <Link to="/" className="text-2xl font-semibold tracking-wide">
-          MyApp
+          Admin Movies
         </Link>
         <div className="flex space-x-6">
           <NavLink

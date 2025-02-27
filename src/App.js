@@ -2,9 +2,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NavBar from "./components/Navbar";
 import Home from "./pages/HomePage";
 import MovieDetail from "./pages/MovieDetail";
-import CreateMovie from "./pages/CreatePage";
-import UpdateMovie from "./pages/EditPage";
-import DeleteMovie from "./pages/DeletePage";
 
 function App() {
   return (
