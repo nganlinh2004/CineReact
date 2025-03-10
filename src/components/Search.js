@@ -1,25 +1,27 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+import { Form, InputGroup } from "react-bootstrap";
 
 function Search({ movies, setFilteredMovies }) {
-  const [searchTerm, setSearchTerm] = useState("");
-  
-  useEffect(() => {
-    const filtered = movies.filter((movie) =>
-      movie.title.toLowerCase().includes(searchTerm.toLowerCase())
-    );
-
-    setFilteredMovies(filtered);
-  }, [searchTerm, movies]); 
+  const searchMovies = (movies, searchTerm) => {
+    return searchTerm
+      ? movies.filter((movie) =>
+          movie.title.toLowerCase().includes(searchTerm.toLowerCase())
+        )
+      : movies;
+  };
 
   return (
-    <div className="mb-4 d-flex justify-content-center">
-      <input
-        type="text"
-        placeholder="Search movies..."
-        className="p-2 border rounded"
-        value={searchTerm}
-        onChange={(e) => setSearchTerm(e.target.value)}
-      />
+    <div className="flex justify-center my-4">
+      <InputGroup className="w-1/2">
+        <Form.Control
+          type="text"
+          placeholder="Search movies"
+          className="p-2 border border-gray-400 rounded-lg"
+          onChange={(e) => {
+            setFilteredMovies(searchMovies(movies, e.target.value));
+          }}
+        />
+      </InputGroup>
     </div>
   );
 }

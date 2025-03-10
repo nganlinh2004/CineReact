@@ -45,7 +45,7 @@ function MovieCard({ movie, handleUpdateMovie, handleDeleteMovie }) {
   );
 };
 
-function MovieList({ movies}) {
+function MovieList({ movies }) {
   const moviesPerPage = 8;
   const [currentPage, setCurrentPage] = useState(1);
 

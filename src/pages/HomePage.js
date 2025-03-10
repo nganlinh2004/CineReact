@@ -2,43 +2,35 @@ import React, { useState } from "react";
 import MovieList from "../components/Item";
 import Search from "../components/Search";
 import CreateMovie from "./CreatePage";
-import moviesData from "../movies";
+import movies from "../movies";
 
 function Home() {
-  // Mảng gốc lưu tất cả phim
-  const [movies, setMovies] = useState(moviesData);
-
-  // Mảng hiển thị sau khi tìm kiếm
-  const [filteredMovies, setFilteredMovies] = useState(moviesData);
-
+  const [movie, setMovies] = useState(movies);
+  const [filteredMovies, setFilteredMovies] = useState(movies);
   const [showForm, setShowForm] = useState(false);
 
-  // Thêm phim mới
   const addMovie = (newMovie) => {
-    const createMovies = [...movies, newMovie];
+    const createMovies = [...movie, newMovie];
     setMovies(createMovies);
+    setFilteredMovies(createMovies);
     setShowForm(false);
   };
 
   return (
-    <div className="container">
-      {/* Nút mở form thêm phim */}
+    <div className="container mx-auto">
       <div className="my-4 text-center">
         <button
           onClick={() => setShowForm(!showForm)}
-          className="px-4 py-2 text-white bg-blue-500 rounded hover:bg-blue-600"
+          className="px-4 py-2 text-white bg-blue-500 rounded-lg hover:bg-blue-600"
         >
           {showForm ? "Close Form" : "Add New Movie"}
         </button>
       </div>
 
-      {/* Form tạo phim */}
       {showForm && <CreateMovie onAddMovie={addMovie} />}
 
-      {/* Component Tìm kiếm */}
-      <Search movies={movies} setFilteredMovies={setFilteredMovies} />
+      <Search movies={movie} setFilteredMovies={setFilteredMovies} />
 
-      {/* Hiển thị danh sách phim */}
       <MovieList movies={filteredMovies} />
     </div>
   );
