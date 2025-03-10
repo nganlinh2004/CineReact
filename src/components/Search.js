@@ -12,7 +12,7 @@ function Search({ movies, setFilteredMovies }) {
 
   return (
     <div className="flex justify-center my-4">
-      <InputGroup className="w-1/2">
+      <InputGroup className="w-50">
         <Form.Control
           type="text"
           placeholder="Search movies"

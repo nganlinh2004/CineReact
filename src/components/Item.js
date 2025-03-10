@@ -71,7 +71,8 @@ function MovieList({ movies }) {
           </Col>
         ))}
       </Row>
-
+      
+      {currentMovies.length === 0 && (<h2 className="text-center text-dark font-bold text-xl">No movies found</h2>)}
       {/* Pagination */}
       <div className="mt-4 d-flex justify-content-center">
         <Pagination>
