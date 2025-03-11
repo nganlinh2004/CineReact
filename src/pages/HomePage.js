@@ -2,15 +2,15 @@ import React, { useState } from "react";
 import MovieList from "../components/Item";
 import Search from "../components/Search";
 import CreateMovie from "./CreatePage";
-import movies from "../movies";
+import moviesList from "../movies";
 
 function Home() {
-  const [movie, setMovies] = useState(movies);
+  const [movies, setMovies] = useState(moviesList);
   const [filteredMovies, setFilteredMovies] = useState(movies);
   const [showForm, setShowForm] = useState(false);
 
   const addMovie = (newMovie) => {
-    const createMovies = [...movie, newMovie];
+    const createMovies = [...movies, newMovie];
     setMovies(createMovies);
     setFilteredMovies(createMovies);
     setShowForm(false);
@@ -29,7 +29,7 @@ function Home() {
 
       {showForm && <CreateMovie onAddMovie={addMovie} />}
 
-      <Search movies={movie} setFilteredMovies={setFilteredMovies} />
+      <Search movies={movies} setFilteredMovies={setFilteredMovies} />
 
       <MovieList movies={filteredMovies} />
     </div>

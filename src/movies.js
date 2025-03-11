@@ -1,4 +1,4 @@
-const movies = [
+const moviesList = [
   {
     id: "MV0001",
     title: "Dune: Part One",
@@ -473,4 +473,4 @@ const movies = [
     image: "truman_show.jpg",
   },
 ];
-export default movies;
+export default moviesList;
